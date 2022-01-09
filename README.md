@@ -14,8 +14,6 @@ This is a solution to the [NFT preview card component challenge on Frontend Ment
   - [Continued development](#continued-development)
 - [Author](#author)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
-
 ## Overview
 
 This is my solution to the Frontend Mentor challenge "NFT preview card component", I coded it using HTML, SASS, the pattern design "mobile first" and BEM.
@@ -33,8 +31,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [solution URL here](https://www.frontendmentor.io/solutions/responsive-card-using-flexbox-and-css-grid-lsnYlKSG5)
+- Live Site URL: [live site URL here](https://diegohrp.github.io/NFT_preview_card/src/index.html)
 
 ## My process
 
