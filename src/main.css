@@ -18,7 +18,7 @@ body {
 
 .card {
   width: 328px;
-  height: 543px;
+  height: 593px;
   display: flex;
   flex-direction: column;
   background-color: #14253d;
@@ -28,7 +28,7 @@ body {
 .card__img {
   display: flex;
   width: 100%;
-  height: 279px;
+  height: 304px;
   border-radius: 10px;
   margin-bottom: 20px;
   position: relative;
@@ -63,9 +63,9 @@ body {
   font-weight: 600;
   margin-bottom: 20px;
   text-decoration: none;
-  font-size: 18px;
-  font-size: 1.125rem;
-  line-height: 1.6875rem;
+  font-size: 22px;
+  font-size: 1.375rem;
+  line-height: 2.0625rem;
 }
 .card__title:hover {
   color: #00fff7;
@@ -74,9 +74,9 @@ body {
   color: #8bacda;
   margin-bottom: 20px;
   font-weight: 300;
-  font-size: 15px;
-  font-size: 0.9375rem;
-  line-height: 1.40625rem;
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 1.5rem;
 }
 .card__info {
   display: flex;
@@ -86,9 +86,9 @@ body {
   border-bottom: 1px solid #2f415b;
   padding-bottom: 15px;
   margin-bottom: 15px;
-  font-size: 14px;
-  font-size: 0.875rem;
-  line-height: 1.3125rem;
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 1.5rem;
 }
 .card__info .card__price {
   display: flex;
@@ -114,9 +114,9 @@ body {
   display: flex;
   align-items: center;
   font-weight: 400;
-  font-size: 12px;
-  font-size: 0.75rem;
-  line-height: 1.125rem;
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 1.5rem;
 }
 .card__creator img {
   width: 33px;
