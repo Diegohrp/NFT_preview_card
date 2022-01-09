@@ -18,8 +18,7 @@ This is a solution to the [NFT preview card component challenge on Frontend Ment
 
 ## Overview
 
-This is my solution for the Frontend Mentor challenge "NFT preview card component", coded using
-HTML, SASS, the pattern design "mobile first" and BEM.
+This is my solution to the Frontend Mentor challenge "NFT preview card component", I coded it using HTML, SASS, the pattern design "mobile first" and BEM.
 
 ### The challenge
 
