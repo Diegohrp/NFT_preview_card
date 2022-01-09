@@ -1,0 +1,24 @@
+{
+  "name": "nftcard",
+  "version": "1.0.0",
+  "description": "Challenge from \"Frontend Mentor\" NFT card preview",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "HTML",
+    "SASS",
+    "CSS",
+    "Frontend",
+    "Mobile First",
+    "BEM",
+    "CSS GRID",
+    "Flex box"
+  ],
+  "author": "Diegohrp",
+  "license": "MIT",
+  "dependencies": {
+    "sass": "^1.47.0"
+  }
+}

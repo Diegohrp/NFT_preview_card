@@ -1,0 +1,29 @@
+$primary-font: "Outfit", sans-serif;
+$background: hsl(217, 54%, 11%);
+$card-background: hsl(216, 50%, 16%);
+$line-color: hsl(215, 32%, 27%);
+$text-color: hsl(215, 51%, 70%);
+$titles-color: hsl(0, 0%, 100%);
+$accent-color: hsl(178, 100%, 50%);
+
+@mixin media($breakpoint) {
+	@if $breakpoint == mobile {
+		@media only screen and (min-width: 375px) {
+			@content;
+		}
+	} @else if $breakpoint == desktop {
+		@media only screen and (min-width: 1440px) {
+			@content;
+		}
+	}
+}
+
+@function calculateRem($size) {
+	$remSize: calc($size / 16px);
+	@return $remSize * 1rem;
+}
+@mixin font-size($size) {
+	font-size: $size;
+	font-size: calculateRem($size);
+	line-height: calculateRem($size) * 1.5;
+}

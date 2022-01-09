@@ -1,0 +1,165 @@
+@use "./global.scss" as *;
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: $background;
+	font-family: $primary-font;
+}
+
+.main-container {
+	display: grid;
+	width: 100%;
+	height: 100vh;
+	place-content: center;
+}
+
+.card {
+	width: 325px;
+	display: flex;
+	flex-direction: column;
+	background-color: $card-background;
+	padding: 22px;
+	border-radius: 20px;
+
+	&__img {
+		display: flex;
+		width: 100%;
+		height: 281px;
+		border-radius: 10px;
+		margin-bottom: 20px;
+		position: relative;
+		cursor: pointer;
+
+		img {
+			width: 100%;
+			height: 100%;
+			border-radius: 10px;
+		}
+		img:last-child {
+			width: 40px;
+			height: 40px;
+			position: absolute;
+			left: calc(50% - 20px);
+			top: calc(50% - 20px);
+			display: none;
+		}
+		&:hover {
+			background: $accent-color;
+			opacity: 0.8;
+		}
+		&:hover img {
+			opacity: 0.4;
+		}
+		&:hover img:last-child {
+			opacity: 1;
+			display: block;
+		}
+	}
+
+	&__title {
+		color: $titles-color;
+		font-weight: 600;
+		margin-bottom: 10px;
+		text-decoration: none;
+		@include font-size(22px);
+	}
+	&__title:hover {
+		color: $accent-color;
+	}
+
+	&__desc {
+		//width: 280px;
+		color: $text-color;
+		margin-bottom: 20px;
+		font-weight: 300;
+		@include font-size(16px);
+	}
+	&__info {
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 10px;
+		align-items: center;
+		border-bottom: 1px solid $line-color;
+		padding-bottom: 20px;
+		margin-bottom: 15px;
+		@include font-size(14px);
+		.card__price {
+			display: flex;
+			color: $accent-color;
+			align-items: center;
+			font-weight: 400;
+
+			img {
+				margin-right: 8px;
+			}
+		}
+		.card__date {
+			display: flex;
+			color: $text-color;
+			align-items: center;
+			font-weight: 300;
+			img {
+				margin-right: 5px;
+				width: 20px;
+				height: 20px;
+			}
+		}
+	}
+
+	&__creator {
+		display: flex;
+		align-items: center;
+		font-weight: 400;
+		@include font-size(14px);
+		img {
+			width: 35px;
+			height: 35px;
+			border: 2px solid $titles-color;
+			border-radius: 50%;
+			margin-right: 15px;
+		}
+		p {
+			color: $text-color;
+			a {
+				color: $titles-color;
+				text-decoration: none;
+				&:hover {
+					color: $accent-color;
+				}
+			}
+		}
+	}
+}
+
+footer {
+	background-color: rgba(0, 0, 0, 0.42);
+	width: 100%;
+	height: 50px;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	color: $text-color;
+	@include font-size(17px);
+	a {
+		text-decoration: none;
+		margin-left: 5px;
+		color: $titles-color;
+		&:hover {
+			color: $accent-color;
+		}
+		&:visited {
+			color: $accent-color;
+		}
+	}
+}
+
+@include media(desktop) {
+	.card {
+		box-shadow: -1px -1px 10px 16px rgba(0, 0, 0, 0.42);
+	}
+}
